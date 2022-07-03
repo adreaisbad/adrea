@@ -17,6 +17,10 @@ const navigation = [
     name: "Clients",
   },
   {
+    href: "/content",
+    name: "Content",
+  },
+  {
     href: "/contact",
     name: "Contact",
   },
