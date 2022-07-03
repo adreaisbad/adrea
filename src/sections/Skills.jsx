@@ -15,7 +15,7 @@ function Languages() {
             </h1>
           </div>
 
-          <table className="min-w-full divide-y divide-gray-700">
+          <table className="min-w-full divide-y divide-gray-500">
             <thead className="bg-gray-600">
               <tr>
                 <th

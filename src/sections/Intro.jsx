@@ -18,6 +18,7 @@ export default function Intro() {
               <br /> I also play too much video games, and I'm afraid I'll die
               too soon.
             </p>
+            <p className="italic mb-8 leading-relaxed text-xl text-gray-400">(Also, AlacticHost, coming soon...)</p>
           </div>
         </div>
       </div>
