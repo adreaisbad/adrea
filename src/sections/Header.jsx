@@ -18,7 +18,7 @@ const navigation = [
   },
   {
     href: "/contact",
-    name: "Contact Me",
+    name: "Contact",
   },
 ];
 
