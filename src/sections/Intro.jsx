@@ -24,7 +24,7 @@ export default function Intro() {
             </h2>
             <p className="mb-8 leading-relaxed text-xl text-gray-400">
               CPU: Intel i7-11700k <br />
-              GPU: Geforce GTX 1950 <br />
+              GPU: Geforce GTX 1650<br />
               Mouse: Logitech G502 Hero <br />
               Keyboard: Steelseries Apex Pro <br />
               Monitor: Gigabyte G34WQC A 34″ 165hz <br />
