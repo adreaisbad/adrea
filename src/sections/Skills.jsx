@@ -11,7 +11,7 @@ function Languages() {
           <div className="text-center mb-20">
             <CodeIcon className="text-green-600 mx-auto inline-block w-10 mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-              Languages that I know
+              My god damn skills
             </h1>
           </div>
 
