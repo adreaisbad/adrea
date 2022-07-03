@@ -10,8 +10,9 @@ function Content() {
           <div className="text-center mb-20">
             <EyeIcon className="text-green-600 mx-auto inline-block w-10 mb-4" />
             <iframe
-              width="700"
-              height="700"
+              className="flex justify-center items-center"
+              width="560"
+              height="315"
               src="https://www.youtube.com/embed/r4z16al39UI"
               title="YouTube video player"
               frameborder="0"
