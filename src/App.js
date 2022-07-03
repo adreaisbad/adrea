@@ -1,9 +1,10 @@
-import { Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./sections/Header";
 import Languages from "./sections/Languages";
 import OwnedClients from "./sections/OwnedClients";
 import Contact from "./sections/Contact";
 import Intro from "./sections/Intro";
+
 function App() {
   return (
     <Router>
