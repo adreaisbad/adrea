@@ -12,9 +12,9 @@ export const socials = [
     logo: "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/71-github-256.png"
   },
   {
-    href: "mailto:dxqt.dailydrops@gmail.com",
-    name: "Email",
-    description: "Maybe not.",
-    logo: "https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Gmail_envelope_letter_email-256.png"
+    href: "https://www.youtube.com/channel/UCJ5xtc8kAjQwsg6do7jBjqw",
+    name: "YouTube",
+    description: "Maybe subscribe?",
+    logo: "https://cdn0.iconfinder.com/data/icons/social-media-2183/512/social__media__social_media__youtube_-256.png"
   },
 ];

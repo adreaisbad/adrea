@@ -5,7 +5,7 @@ import { socials } from "../data/socials";
 export default function Contact() {
   return (
     <section id="contact">
-      <div className="text-gray-400 bg-gray-800 px-10 py-20 body-font">
+      <div className="text-gray-400 bg-slate-700 px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
         <div className="container mx-auto">
           <div className="text-center mb-20">
@@ -14,13 +14,13 @@ export default function Contact() {
               Contact Me
             </h1>
             <p className="text-gray-400 lg:w-2/3 mx-auto leading-relaxed text-xl">
-              I can code a Spigot plugin for free or at a low cost.
+              I might be able to help you with hosting related or SpigotMC projects :3
             </p>
           </div>
 
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {socials.map((account) => (
-              <li key={account.name} className="col-span-1 bg-gray-700 rounded-lg shadow divide-y divide-gray-200 cursor-pointer">
+              <li key={account.name} className="col-span-1 bg-gray-600 rounded-lg shadow divide-y divide-gray-200 cursor-pointer">
                 <a href={account.href} target="_blank" rel="noreferrer">
                   <div className="w-full flex items-center justify-between p-6 space-x-6">
                     <div className="flex-1 truncate">

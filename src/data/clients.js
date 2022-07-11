@@ -10,7 +10,7 @@ export const clients = [
     title: "Azura Client",
     subtitle: "Blatant",
     description:
-      "A good free client; I got it through an invite code; I didn't apply for it.",
+      "A good free client; I got it with an invite code; I didn't apply for it.",
     image: "https://i.ytimg.com/vi/F7Ok7P9TlX0/maxresdefault.jpg",
     link: "https://azura.best",
   },

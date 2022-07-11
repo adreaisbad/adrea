@@ -24,7 +24,7 @@ const navigation = [
 
 export default function Header() {
   return (
-    <Popover className="relative bg-gray-700">
+    <Popover className="relative bg-darkgray">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div>
           <a href="#" className="flex">
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={navlink.name}
                 to={navlink.href}
-                className="text-lg text-gray-300 hover:text-gray-400"
+                className="text-lg font-medium text-gray-300 hover:text-gray-400"
               >
                 {navlink.name}
               </Link>
@@ -84,7 +84,7 @@ export default function Header() {
                   <Link
                     key={navlink.name}
                     to={navlink.href}
-                    className="text-lg text-gray-300 hover:text-gray-400"
+                    className="text-lg font-bold text-gray-300 hover:text-gray-400"
                   >
                     {navlink.name}
                   </Link>

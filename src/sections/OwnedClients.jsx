@@ -5,7 +5,7 @@ import { clients } from "../data/clients";
 export default function OwnedClients() {
   return (
     <section id="clients">
-      <div className="text-gray-400 bg-gray-800 px-10 py-20 body-font">
+      <div className="text-gray-400 bg-gray-700 px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
           <div className="flex flex-col w-full mb-20">
             <MoonIcon className="text-green-600 mx-auto inline-block w-10 mb-4" />
