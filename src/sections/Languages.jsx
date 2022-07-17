@@ -5,11 +5,11 @@ import { languages } from "../data/languages";
 function Languages() {
   return (
     <section id="skills">
-      <div className="text-gray-400 bg-gray-800 px-10 py-20 body-font">
+      <div className="text-gray-400 bg-slate-700 px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
         <div className="container mx-auto">
           <div className="text-center mb-20">
-            <CodeIcon className="text-green-600 mx-auto inline-block w-10 mb-4" />
+            <CodeIcon className="text-blue-600 mx-auto inline-block w-10 mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
               Languages that I know
             </h1>

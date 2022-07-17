@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 const navigation = [
   {
     href: "/",
-    name: "Home",
+    name: "About Me",
   },
   {
     href: "/skills",
-    name: "Skills",
+    name: "My Skills",
   },
   {
     href: "/clients",
-    name: "Clients",
+    name: "My Clients",
   },
   {
     href: "/contact",
@@ -24,8 +24,8 @@ const navigation = [
 
 export default function Header() {
   return (
-    <Popover className="relative bg-darkgray">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+    <Popover className="relative bg-lilbitdark">
+      <div className="flex justify-center text-center items-center px-4 py-6 sm:px-6">
         <div>
           <a href="#" className="flex">
             <span className="sr-only">adrea</span>
@@ -37,7 +37,7 @@ export default function Header() {
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
         </div>
-        <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
+        <div className="hidden md:flex md:items-center md:justify-center">
           <Popover.Group as="nav" className="flex space-x-10">
             {navigation.map((navlink) => (
               <Link
@@ -45,7 +45,7 @@ export default function Header() {
                 to={navlink.href}
                 className="text-lg font-medium text-gray-300 hover:text-gray-400"
               >
-                {navlink.name}
+                {navlink.icon} {navlink.name}
               </Link>
             ))}
           </Popover.Group>
@@ -86,7 +86,7 @@ export default function Header() {
                     to={navlink.href}
                     className="text-lg font-bold text-gray-300 hover:text-gray-400"
                   >
-                    {navlink.name}
+                    {navlink.icon} {navlink.name}
                   </Link>
                 ))}
               </div>

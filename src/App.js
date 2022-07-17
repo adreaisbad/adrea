@@ -8,14 +8,15 @@ import Skills from "./sections/Skills";
 function App() {
   return (
     <Router>
+      
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Intro />} />
-        <Route exact path="/languages" element={<Languages />} />
-        <Route exact path="/skills" element={<Skills />} />
-        <Route exact path="/clients" element={<OwnedClients />} />
-        <Route exact path="/contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route exact path="/" element={<Intro />} />
+          <Route exact path="/languages" element={<Languages />} />
+          <Route exact path="/skills" element={<Skills />} />
+          <Route exact path="/clients" element={<OwnedClients />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
     </Router>
   );
 }

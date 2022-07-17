@@ -5,53 +5,67 @@ import { languages } from "../data/languages";
 function Languages() {
   return (
     <section id="skills">
-      <div className="text-gray-400 bg-gray-700 px-10 py-20 body-font">
+      <div className="text-gray-400 bg-dark px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
         <div className="container mx-auto">
-          <div className="text-center mb-20">
-            <CodeIcon className="text-green-600 mx-auto inline-block w-10 mb-4" />
-            <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-              My god damn skills
-            </h1>
+          <div className="mb-20 text-center">
+            <div className="bg-lilbitdark">
+              <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+                <div className="text-center">
+                  <CodeIcon className="text-gray-400 mx-auto inline-block w-10 mb-4" />
+                  <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    My Skills
+                  </p>
+                  <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
+                    I have over 3-4 years of Spigot development experience and
+                    about a month of web development, kinda.
+                  </p>
+                  <br />
+                  <table className="border-solid border-2 min-w-full divide-y divide-gray-400">
+                    <thead className="bg-tabledark">
+                      <tr>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                        ></th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                        >
+                          Name
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                        >
+                          Status
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-etabledaaark">
+                      {languages.map((lang) => (
+                        <tr key={lang.name}>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-300">
+                            <img
+                              className="h-8 w-8"
+                              src={lang.logo}
+                              alt={lang.name}
+                            />
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                            {lang.name}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                            {lang.status}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <table className="min-w-full divide-y divide-gray-500">
-            <thead className="bg-gray-600">
-              <tr>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider"
-                ></th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider"
-                >
-                  Name
-                </th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider"
-                >
-                  Status
-                </th>
-              </tr>
-            </thead>
-            <tbody className="bg-gray-600">
-              {languages.map((lang) => (
-                <tr key={lang.name}>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-300">
-                    <img className="h-8 w-8" src={lang.logo} alt={lang.name}/>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                    {lang.name}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                    {lang.status}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </div>
     </section>
