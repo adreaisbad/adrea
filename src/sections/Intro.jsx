@@ -21,6 +21,9 @@ export default function Intro() {
                       I'm from Vietnam, and I'm 16 years old. I love cheating in
                       block game, doing web, and being a retard.
                     </p>
+                    <p className="max-w-xl mt-5 mx-auto text-sm italic text-gray-400">
+                      (Also, ignore the domain name, I'm not from Russia.)
+                    </p>
                   </div>
                 </div>
               </div>
