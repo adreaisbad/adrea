@@ -22,7 +22,9 @@ function Languages() {
                     about a month of web development, kinda.
                   </p>
                   <p className="max-w-xl mt-5 mx-auto text-sm italic text-blue-400">
-                    <a href="https://github.com/adreaisbad/adrea">https://github.com/adreaisbad/adrea</a>
+                    <a href="https://github.com/adreaisbad/adrea" target="_blank">
+                      https://github.com/adreaisbad/adrea
+                    </a>
                   </p>
                   <br />
                   <motion.div whileHover={{ scale: 1.09 }}>
