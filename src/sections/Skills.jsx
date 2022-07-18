@@ -21,9 +21,9 @@ function Languages() {
                     I have over 3-4 years of Spigot development experience and
                     about a month of web development, kinda.
                   </p>
-                  <a href="https://github.com/adreaisbad/adrea" className="max-w-xl mt-5 mx-auto text-sm italic text-blue-400">
-                    https://github.com/adreaisbad/adrea
-                  </a>
+                  <p className="max-w-xl mt-5 mx-auto text-sm italic text-blue-400">
+                    <a href="https://github.com/adreaisbad/adrea">https://github.com/adreaisbad/adrea</a>
+                  </p>
                   <br />
                   <motion.div whileHover={{ scale: 1.09 }}>
                     <table className="border-solid border-2 min-w-full divide-y divide-gray-400">
