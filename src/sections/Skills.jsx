@@ -1,6 +1,7 @@
 import React from "react";
 import { CodeIcon } from "@heroicons/react/solid";
 import { languages } from "../data/languages";
+import { motion } from "framer-motion";
 
 function Languages() {
   return (
@@ -21,47 +22,49 @@ function Languages() {
                     about a month of web development, kinda.
                   </p>
                   <br />
-                  <table className="border-solid border-2 min-w-full divide-y divide-gray-400">
-                    <thead className="bg-tabledark">
-                      <tr>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
-                        ></th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
-                        >
-                          Name
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
-                        >
-                          Status
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-etabledaaark">
-                      {languages.map((lang) => (
-                        <tr key={lang.name}>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-300">
-                            <img
-                              className="h-8 w-8"
-                              src={lang.logo}
-                              alt={lang.name}
-                            />
-                          </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                            {lang.name}
-                          </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                            {lang.status}
-                          </td>
+                  <motion.div whileHover={{ scale: 1.09 }}>
+                    <table className="border-solid border-2 min-w-full divide-y divide-gray-400">
+                      <thead className="bg-tabledark">
+                        <tr>
+                          <th
+                            scope="col"
+                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                          ></th>
+                          <th
+                            scope="col"
+                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                          >
+                            Name
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                          >
+                            Status
+                          </th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody className="bg-etabledaaark">
+                        {languages.map((lang) => (
+                          <tr key={lang.name}>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-300">
+                              <img
+                                className="h-8 w-8"
+                                src={lang.logo}
+                                alt={lang.name}
+                              />
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                              {lang.name}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                              {lang.status}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </motion.div>
                 </div>
               </div>
             </div>

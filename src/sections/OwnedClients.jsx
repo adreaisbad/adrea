@@ -1,6 +1,7 @@
 import { MoonIcon } from "@heroicons/react/solid";
 import React from "react";
 import { clients } from "../data/clients";
+import { motion } from "framer-motion";
 
 export default function OwnedClients() {
   return (
@@ -19,7 +20,7 @@ export default function OwnedClients() {
                   <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
                     I play legit all the time.
                   </p>
-                  <br/>
+                  <br />
                   <div className="flex flex-wrap -m-4">
                     {clients.map((client) => (
                       <a
@@ -27,24 +28,26 @@ export default function OwnedClients() {
                         key={client.image}
                         className="sm:w-1/2 w-100 p-4"
                       >
-                        <div className="flex relative">
-                          <img
-                            alt={client.title}
-                            className="absolute inset-0 object-cover object-center h-full w-full"
-                            src={client.image}
-                          />
-                          <div className="px-8 py-10 relative z-10 w-full bg-etabledaaark opacity-0 hover:opacity-100">
-                            <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
-                              {client.subtitle}
-                            </h2>
-                            <h1 className="title-font text-lg font-medium text-white mb-3">
-                              {client.title}
-                            </h1>
-                            <p className="leading-relaxed">
-                              {client.description}
-                            </p>
+                        <motion.div whileHover={{ scale: 1.07 }}>
+                          <div className="flex relative">
+                            <img
+                              alt={client.title}
+                              className="absolute inset-0 object-cover object-center h-full w-full"
+                              src={client.image}
+                            />
+                            <div className="px-8 py-10 relative z-10 w-full bg-etabledaaark opacity-0 hover:opacity-100">
+                              <h2 className="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">
+                                {client.subtitle}
+                              </h2>
+                              <h1 className="title-font text-lg font-medium text-white mb-3">
+                                {client.title}
+                              </h1>
+                              <p className="leading-relaxed">
+                                {client.description}
+                              </p>
+                            </div>
                           </div>
-                        </div>
+                        </motion.div>
                       </a>
                     ))}
                   </div>

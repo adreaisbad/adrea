@@ -1,7 +1,7 @@
 import React from "react";
 import { LinkIcon } from "@heroicons/react/solid";
 import { socials } from "../data/socials";
-
+import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <section id="contact">
@@ -19,10 +19,11 @@ export default function Contact() {
                   <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
                     I can do things for free :3
                   </p>
-                  <br/>
+                  <br />
                   <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {socials.map((account) => (
-                      <li
+                      <motion.li
+                        whileHover={{ scale: 1.08 }}
                         key={account.name}
                         className="col-span-1 bg-etabledaaark rounded-lg shadow divide-y divide-gray-200 cursor-pointer"
                       >
@@ -45,7 +46,7 @@ export default function Contact() {
                             />
                           </div>
                         </a>
-                      </li>
+                      </motion.li>
                     ))}
                   </ul>
                 </div>

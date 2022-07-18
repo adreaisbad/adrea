@@ -1,30 +1,41 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
+import LoadingBar from "@weblif/react-top-loading-bar";
 
 const navigation = [
   {
     href: "/",
     name: "About Me",
+    progress: 25,
   },
   {
     href: "/skills",
     name: "My Skills",
+    progress: 50,
   },
   {
     href: "/clients",
     name: "My Clients",
+    progress: 75,
   },
   {
     href: "/contact",
     name: "Contact",
+    progress: 100,
   },
 ];
 
 export default function Header() {
+  const [progress, setProgress] = useState(0);
   return (
     <Popover className="relative bg-lilbitdark">
+      <LoadingBar
+        color="#ffffff"
+        progress={progress}
+        onLoaderFinished={() => setProgress(99)}
+      />
       <div className="flex justify-center text-center items-center px-4 py-6 sm:px-6">
         <div>
           <a href="#" className="flex">
@@ -43,6 +54,7 @@ export default function Header() {
               <Link
                 key={navlink.name}
                 to={navlink.href}
+                onClick={() => setProgress(navlink.progress)}
                 className="text-lg font-medium text-gray-300 hover:text-gray-400"
               >
                 {navlink.icon} {navlink.name}
@@ -84,6 +96,7 @@ export default function Header() {
                   <Link
                     key={navlink.name}
                     to={navlink.href}
+                    onClick={() => setProgress(navlink.progress)}
                     className="text-lg font-bold text-gray-300 hover:text-gray-400"
                   >
                     {navlink.icon} {navlink.name}
