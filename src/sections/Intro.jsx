@@ -7,8 +7,8 @@ export default function Intro() {
     <section id="about">
       <div className="text-gray-400 bg-dark px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
-        <motion.div whileHover={{ scale: 1.03 }}>
-          <div className="container mx-auto">
+        <motion.div whileHover={{ scale: 1.02 }}>
+          <div className="mx-auto">
             <div className="mb-20 text-center">
               <div className="bg-lilbitdark">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -24,6 +24,34 @@ export default function Intro() {
                     <p className="max-w-xl mt-5 mx-auto text-sm italic text-gray-400">
                       (Also, ignore the domain name, I'm not from Russia.)
                     </p>
+
+                    {/* <div className="mt-5 flex justify-center">
+                      <div className="bg-dark flex flex-col md:flex-row md:max-w-xl rounded-lg  shadow-lg">
+                        {largeImage && (
+                          <img
+                            width="120px"
+                            draggable={false}
+                            src={largeImage}
+                            alt=""
+                          />
+                        )}
+                        {smallImage && (
+                          <img
+                            width="120px"
+                            draggable={false}
+                            src={smallImage}
+                            alt=""
+                          />
+                        )}
+                      </div>
+                      <div className="bg-dark p-6 flex flex-col justify-start">
+                        <h4 className="main-accent">{name}</h4>
+                        {firstLine && <h5>{firstLine}</h5>}
+                        {secondLine && <h5>{secondLine}</h5>}
+                        {elapsed}
+                      </div>
+                    </div> */}
+
                   </div>
                 </div>
               </div>

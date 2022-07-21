@@ -8,7 +8,7 @@ export default function OwnedClients() {
     <section id="clients">
       <div className="text-gray-400 bg-dark px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
-        <div className="container mx-auto">
+        <div className="mx-auto">
           <div className="mb-20 text-center">
             <div className="bg-lilbitdark">
               <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

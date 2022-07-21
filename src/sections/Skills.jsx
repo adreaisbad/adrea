@@ -8,8 +8,6 @@ function Languages() {
     <section id="skills">
       <div className="text-gray-400 bg-dark px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
-        <div className="container mx-auto">
-          <div className="mb-20 text-center">
             <div className="bg-lilbitdark">
               <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <div className="text-center">
@@ -18,32 +16,27 @@ function Languages() {
                     My Skills
                   </p>
                   <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
-                    I have over 3-4 years of Spigot development experience and
+                    I have over 3-4 years of SpigotMC plugin development and
                     about a month of web development, kinda.
                   </p>
-                  <p className="max-w-xl mt-5 mx-auto text-sm italic text-blue-400">
-                    <a href="https://github.com/adreaisbad/adrea" target="_blank">
-                      https://github.com/adreaisbad/adrea
-                    </a>
-                  </p>
                   <br />
-                  <motion.div whileHover={{ scale: 1.09 }}>
-                    <table className="border-solid border-2 min-w-full divide-y divide-gray-400">
+                  <motion.div whileHover={{ scale: 1.02 }}>
+                    <table className="min-w-full max-w-1">
                       <thead className="bg-tabledark">
                         <tr>
                           <th
                             scope="col"
-                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                            className="px-6 py-3 text-xs font-sm text-gray-200 uppercase tracking-wider"
                           ></th>
                           <th
                             scope="col"
-                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                            className="px-6 py-3 text-xs font-sm text-gray-200 uppercase tracking-wider"
                           >
                             Name
                           </th>
                           <th
                             scope="col"
-                            className="px-6 py-3 text-xs font-medium text-gray-200 uppercase tracking-wider"
+                            className="px-6 py-3 text-xs font-sm text-gray-200 uppercase tracking-wider"
                           >
                             Status
                           </th>
@@ -53,11 +46,7 @@ function Languages() {
                         {languages.map((lang) => (
                           <tr key={lang.name}>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-300">
-                              <img
-                                className="h-8 w-8"
-                                src={lang.logo}
-                                alt={lang.name}
-                              />
+                              {lang.logo}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                               {lang.name}
@@ -74,8 +63,6 @@ function Languages() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 }

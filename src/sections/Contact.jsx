@@ -7,7 +7,7 @@ export default function Contact() {
     <section id="contact">
       <div className="text-gray-400 bg-dark px-10 py-20 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40"></div>
-        <div className="container mx-auto">
+        <div className="mx-auto">
           <div className="mb-20 text-center">
             <div className="bg-lilbitdark">
               <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -17,7 +17,7 @@ export default function Contact() {
                     Contact Me
                   </p>
                   <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
-                    I can do things for free :3
+                    If you need assistance with your hosting or have any other questions, please message me.
                   </p>
                   <br />
                   <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -39,11 +39,7 @@ export default function Contact() {
                                 {account.description}
                               </p>
                             </div>
-                            <img
-                              className="w-10 h-10 rounded-full flex-shrink-0"
-                              src={account.logo}
-                              alt={account.name}
-                            />
+                            {account.logo}
                           </div>
                         </a>
                       </motion.li>

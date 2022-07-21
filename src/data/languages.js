@@ -1,31 +1,31 @@
 export const languages = [
   {
-    logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-256.png",
+    logo: <i className="fa-brands fa-java fa-2x"></i>,
     name: "Java/Spigot",
-    status: "Semi-Fluent",
+    status: "Fluent",
   },
   {
-    logo: "https://cdn2.iconfinder.com/data/icons/neon-line-social-circles/100/Neon_Line_Social_Circles_50Icon_10px_grid-48-256.png",
+    logo: <i className="fa-brands fa-html5 fa-3x"></i>,
     name: "HTML5",
     status: "Fluent",
   },
   {
-    logo: "https://cdn1.iconfinder.com/data/icons/operating-system-flat-1/30/ubuntu-256.png",
+    logo: <i className="fa-brands fa-ubuntu fa-3x"></i>,
     name: "Linux",
-    status: "Fluent",
+    status: "Semi-Fluent",
   },
   {
-    logo: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-256.png",
+    logo: <i className="fa-brands fa-react fa-3x"></i>,
     name: "React",
     status: "Semi-Fluent",
   },
   {
-    logo: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-256.png",
+    logo: <i className="fa-brands fa-css3-alt fa-3x"></i>,
     name: "CSS",
     status: "Still learning",
   },
   {
-    logo: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-256.png",
+    logo: <i className="fa-brands fa-js fa-3x"></i>,
     name: "JavaScript",
     status: "Still learning",
   },

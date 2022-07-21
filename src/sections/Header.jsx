@@ -38,12 +38,10 @@ export default function Header() {
       />
       <div className="flex justify-center text-center items-center px-4 py-6 sm:px-6">
         <div>
-          <a href="#" className="flex">
-            <span className="sr-only">adrea</span>
-          </a>
+          <span className="sr-only">adrea</span>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
-          <Popover.Button className="bg-gray-700 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+          <Popover.Button className="bg-lilbitgray rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
             <span className="sr-only">Open menu</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
@@ -77,12 +75,12 @@ export default function Header() {
           focus
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-lilbitdark divide-y-2 divide-gray-500">
+          <div className="rounded-lg shadow-lg bg-lilbitdark divide-y-2 divide-gray-500">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div></div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-lilbitdark rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                  <Popover.Button className="bg-lilbitdark rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-inset focus:ring-green-500">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
