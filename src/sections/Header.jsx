@@ -8,16 +8,21 @@ const navigation = [
   {
     href: "/",
     name: "About Me",
-    progress: 25,
+    progress: 0,
   },
   {
     href: "/skills",
     name: "My Skills",
-    progress: 50,
+    progress: 25,
   },
   {
     href: "/clients",
     name: "My Clients",
+    progress: 50,
+  },
+  {
+    href: "/projects",
+    name: "Projects",
     progress: 75,
   },
   {
