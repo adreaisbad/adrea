@@ -8,7 +8,7 @@ const navigation = [
   {
     href: "/",
     name: "About Me",
-    progress: 0,
+    progress: 1,
   },
   {
     href: "/skills",
